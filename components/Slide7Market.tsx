@@ -13,7 +13,7 @@ export function Slide7Market() {
       <div className="max-w-6xl w-full">
         {/* Headline */}
         <motion.h2
-          className="text-6xl text-[#F9F5EE] mb-16 text-center"
+          className="text-4xl sm:text-5xl text-[#F9F5EE] mb-8 text-center leading-tight"
           style={{ fontFamily: 'Lora, serif' }}
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export function Slide7Market() {
         </motion.h2>
 
         {/* Radial chart */}
-        <div className="relative h-[500px] flex items-center justify-center overflow-visible mb-8">
+        <div className="relative h-[420px] flex items-center justify-center overflow-visible mb-6">
           {/* Center point */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#F26B2D] z-20" />
 
