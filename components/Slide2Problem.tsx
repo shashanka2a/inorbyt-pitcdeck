@@ -19,7 +19,7 @@ export function Slide2Problem() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-6xl text-[#0E3E45] mb-6 leading-tight" style={{ fontFamily: 'Lora, serif' }}>
-            Creativity is thriving — but the economy around it is{' '}
+            Creativity is thriving - but the economy around it is{' '}
             <span className="text-[#F26B2D]">fragmented.</span>
           </h2>
           

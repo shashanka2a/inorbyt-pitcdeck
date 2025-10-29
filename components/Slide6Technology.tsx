@@ -10,20 +10,20 @@ export function Slide6Technology() {
   ];
 
   return (
-    <div className="relative w-full h-screen bg-gradient-to-b from-[#F9F5EE] to-[#FDF8F1] flex items-center justify-center overflow-hidden px-16">
+    <div className="relative w-full h-screen bg-gradient-to-b from-[#F9F5EE] to-[#FDF8F1] flex items-center justify-center overflow-hidden px-8 sm:px-16">
       <div className="max-w-5xl w-full">
         {/* Headline */}
         <motion.h2
-          className="text-6xl text-[#0E3E45] mb-4 text-center"
+          className="text-5xl sm:text-6xl text-[#0E3E45] mb-6 text-center leading-tight px-4"
           style={{ fontFamily: 'Lora, serif' }}
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Built for interoperability —
+          Built for interoperability -
         </motion.h2>
         <motion.p
-          className="text-3xl text-[#F26B2D] mb-20 text-center"
+          className="text-2xl sm:text-3xl text-[#F26B2D] mb-20 text-center px-4"
           style={{ fontFamily: 'Lora, serif' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

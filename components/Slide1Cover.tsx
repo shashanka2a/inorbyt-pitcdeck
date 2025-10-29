@@ -82,7 +82,7 @@ export function Slide1Cover() {
         </p>
         
         <p className="text-xl text-[#F9F5EE]/80 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
-          Building the interoperable reward layer for the creator economy — powered by Base.
+          Building the interoperable reward layer for the creator economy - powered by Base.
         </p>
       </motion.div>
 

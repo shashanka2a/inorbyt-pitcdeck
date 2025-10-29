@@ -105,7 +105,7 @@ export function Slide8Business() {
           <div className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0E3E45] border-2 border-[#F26B2D] shadow-xl">
             <TrendingUp className="w-5 h-5 text-[#F26B2D]" />
             <p className="text-[#F9F5EE]" style={{ fontFamily: 'DM Sans, sans-serif' }}>
-              Revenue scales with creator success — our incentives are aligned
+              Revenue scales with creator success - our incentives are aligned
             </p>
           </div>
         </motion.div>
