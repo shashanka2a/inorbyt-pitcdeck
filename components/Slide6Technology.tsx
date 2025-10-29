@@ -10,11 +10,11 @@ export function Slide6Technology() {
   ];
 
   return (
-    <div className="relative w-full h-screen bg-gradient-to-b from-[#F9F5EE] to-[#FDF8F1] flex items-center justify-center overflow-hidden px-8 sm:px-16">
-      <div className="max-w-5xl w-full">
+    <div className="relative w-full h-screen bg-gradient-to-b from-[#F9F5EE] to-[#FDF8F1] flex flex-col justify-center overflow-hidden px-8 sm:px-16 py-8">
+      <div className="max-w-5xl w-full mx-auto">
         {/* Headline */}
         <motion.h2
-          className="text-4xl sm:text-5xl text-[#0E3E45] mb-2 text-center leading-tight px-4"
+          className="text-3xl sm:text-4xl text-[#0E3E45] mb-1 text-center leading-tight px-4"
           style={{ fontFamily: 'Lora, serif' }}
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ export function Slide6Technology() {
           Built for interoperability -
         </motion.h2>
         <motion.p
-          className="text-xl sm:text-2xl text-[#F26B2D] mb-8 text-center px-4"
+          className="text-lg sm:text-xl text-[#F26B2D] mb-6 text-center px-4"
           style={{ fontFamily: 'Lora, serif' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -33,7 +33,7 @@ export function Slide6Technology() {
         </motion.p>
 
         {/* Architecture diagram */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {layers.map((layer, index) => (
             <motion.div
               key={layer.name}
@@ -43,7 +43,7 @@ export function Slide6Technology() {
               transition={{ duration: 0.6, delay: 0.4 + index * 0.15 }}
             >
               <motion.div
-                className="relative rounded-full h-20 flex items-center justify-center shadow-2xl border-4 border-white/50"
+                className="relative rounded-full h-16 flex items-center justify-center shadow-2xl border-[3px] border-white/50"
                 style={{
                   width: layer.width,
                   backgroundColor: layer.name === 'InOrbyt Layer' ? '#0E3E45' : layer.color,
@@ -51,7 +51,7 @@ export function Slide6Technology() {
                 whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
               >
                 <span
-                  className="text-lg sm:text-xl text-white font-medium relative z-10"
+                  className="text-base sm:text-lg text-white font-medium relative z-10"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {layer.name}
@@ -66,10 +66,10 @@ export function Slide6Technology() {
               {/* Connecting arrow */}
               {index < layers.length - 1 && (
                 <motion.svg
-                  width="30"
-                  height="35"
+                  width="24"
+                  height="28"
                   viewBox="0 0 40 50"
-                  className="my-0.5"
+                  className="my-0"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.4, delay: 0.6 + index * 0.15 }}
@@ -99,7 +99,7 @@ export function Slide6Technology() {
 
         {/* Base logo credit */}
         <motion.div
-          className="mt-8 flex items-center justify-center gap-3"
+          className="mt-6 flex items-center justify-center gap-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.5 }}
