@@ -20,12 +20,12 @@ export function Slide3Opportunity() {
 
         {/* Separate circles layout */}
         <div className="relative h-[480px] w-full flex items-center justify-center overflow-visible py-8">
-          {/* Circle 1 - Creators - Center Top */}
+          {/* Circle 1 - Creators - Center */}
           <motion.div
             className="absolute group"
             style={{ 
               left: '50%', 
-              top: '32%',
+              top: '50%',
               transform: 'translate(-50%, -50%)',
               width: '200px',
               height: '200px',
