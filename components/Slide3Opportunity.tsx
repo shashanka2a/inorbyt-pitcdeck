@@ -107,10 +107,10 @@ export function Slide3Opportunity() {
             </motion.div>
           </motion.div>
 
-          {/* Center logo - InOrbyt */}
+          {/* Center logo - InOrbyt (behind circles) */}
           <motion.div
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            style={{ zIndex: 50 }}
+            style={{ zIndex: 5 }}
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
