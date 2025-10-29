@@ -30,8 +30,12 @@ export function Slide7Market() {
 
           {/* Orbit rings */}
           {markets.map((market, index) => {
-            // Calculate label positions to avoid overlap
-            const labelOffset = market.radius + 60 + (index * 15);
+            // Place labels evenly around each circle's circumference
+            const angleDeg = (360 / markets.length) * index - 90; // start at top
+            const angleRad = (angleDeg * Math.PI) / 180;
+            const radialOffset = market.radius + 48 + index * 8; // push slightly outside ring
+            const x = Math.cos(angleRad) * radialOffset;
+            const y = Math.sin(angleRad) * radialOffset;
             return (
               <motion.div
                 key={market.name}
@@ -59,14 +63,14 @@ export function Slide7Market() {
                   }}
                 />
 
-                {/* Market label - positioned on the ring */}
+                {/* Market label - evenly distributed on circumference */}
                 <motion.div
                   className="absolute rounded-2xl px-6 py-4 shadow-xl z-30"
                   style={{
                     backgroundColor: market.color,
-                    top: `-${labelOffset}px`,
-                    left: '50%',
-                    transform: 'translateX(-50%)',
+                    top: `calc(50% + ${y}px)`,
+                    left: `calc(50% + ${x}px)`,
+                    transform: 'translate(-50%, -50%)',
                     minWidth: '220px',
                   }}
                   initial={{ opacity: 0, y: 20 }}

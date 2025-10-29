@@ -78,13 +78,13 @@ export function Slide3Opportunity() {
             </motion.div>
           </motion.div>
 
-          {/* Circle 3 - Freelancers - Bottom Center */}
+          {/* Circle 3 - Freelancers - Left */}
           <motion.div
             className="absolute group"
             style={{ 
-              left: '50%', 
-              transform: 'translateX(-50%)', 
-              bottom: '15%',
+              left: '10%', 
+              top: '50%',
+              transform: 'translateY(-50%)', 
               width: '200px',
               height: '200px',
               zIndex: 10
