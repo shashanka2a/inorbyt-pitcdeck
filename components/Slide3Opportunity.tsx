@@ -8,7 +8,7 @@ export function Slide3Opportunity() {
       <div className="max-w-6xl w-full text-center">
         {/* Headline */}
         <motion.h2
-          className="text-6xl text-[#F9F5EE] mb-20 leading-tight"
+          className="text-5xl sm:text-6xl text-[#F9F5EE] mb-12 leading-tight"
           style={{ fontFamily: 'Lora, serif' }}
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -19,15 +19,15 @@ export function Slide3Opportunity() {
         </motion.h2>
 
         {/* Venn diagram */}
-        <div className="relative h-[500px] w-full flex items-center justify-center overflow-visible">
+        <div className="relative h-[450px] w-full flex items-center justify-center overflow-visible">
           {/* Circle 1 - Creators */}
           <motion.div
             className="absolute group"
             style={{ 
-              left: 'calc(50% - 180px)', 
-              top: '60px',
-              width: '288px',
-              height: '288px',
+              left: 'calc(50% - 160px)', 
+              top: '50px',
+              width: '260px',
+              height: '260px',
               zIndex: 10
             }}
             initial={{ opacity: 0, scale: 0 }}
@@ -52,10 +52,10 @@ export function Slide3Opportunity() {
           <motion.div
             className="absolute group"
             style={{ 
-              right: 'calc(50% - 180px)', 
-              top: '60px',
-              width: '288px',
-              height: '288px',
+              right: 'calc(50% - 160px)', 
+              top: '50px',
+              width: '260px',
+              height: '260px',
               zIndex: 10
             }}
             initial={{ opacity: 0, scale: 0 }}
@@ -82,9 +82,9 @@ export function Slide3Opportunity() {
             style={{ 
               left: '50%', 
               transform: 'translateX(-50%)', 
-              bottom: '40px',
-              width: '288px',
-              height: '288px',
+              bottom: '30px',
+              width: '260px',
+              height: '260px',
               zIndex: 10
             }}
             initial={{ opacity: 0, scale: 0 }}
@@ -114,7 +114,7 @@ export function Slide3Opportunity() {
             transition={{ duration: 0.8, delay: 1 }}
             whileHover={{ rotate: 180, transition: { duration: 0.6 } }}
           >
-            <div className="w-36 h-36 rounded-full bg-gradient-to-br from-[#F26B2D] to-[#0E3E45] flex items-center justify-center shadow-2xl border-4 border-[#F9F5EE]">
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#F26B2D] to-[#0E3E45] flex items-center justify-center shadow-2xl border-4 border-[#F9F5EE]">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
                 <circle cx="32" cy="32" r="16" stroke="#F9F5EE" strokeWidth="2.5" fill="none" />
                 <circle cx="32" cy="32" r="6" fill="#F9F5EE" />
