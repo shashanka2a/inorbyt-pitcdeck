@@ -30,8 +30,8 @@ export function Slide7Market() {
 
           {/* Orbit rings */}
           {markets.map((market, index) => {
-            // Place labels evenly around each circle's circumference
-            const angleDeg = (360 / markets.length) * index - 90; // start at top
+            // Place first label at top, second at right, third at left
+            const angleDeg = [-90, 0, 180][index] ?? -90;
             const angleRad = (angleDeg * Math.PI) / 180;
             const radialOffset = market.radius + 48 + index * 8; // push slightly outside ring
             const x = Math.cos(angleRad) * radialOffset;
